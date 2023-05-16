@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    .card {
+        background-color: #333;
+        color: #fff;
+    }
+    
+    .card-transition {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .card-transition:hover {
+        transform: scale(1.1);
+    }
+    
+    .card-animation {
+        animation: slideIn 0.5s ease-in-out;
+    }
+    
+    @keyframes slideIn {
+        0% {
+            opacity: 0;
+            transform: translateY(50%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .card-hover:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transform: translateY(-5px);
+    }
+    
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    .footer:hover {
+        background-color: #111;
+    }
+    
+    .footer p {
+        margin-bottom: 0;
+    }
+    
+    .footer-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .footer-contact .icon {
+        margin-right: 5px;
+    }
+    
+    .footer-contact a {
+        color: #fff;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .footer-contact a:hover {
+        color: #ccc;
+    }
+    
+    .footer-animation {
+        animation: slideIn 0.5s ease-in-out;
+    }
+    
+    @keyframes slideIn {
+        0% {
+            opacity: 0;
+            transform: translateY(50%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">AIR CONDITIONER</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Companies
+                </a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item text-light" href="#">Gree</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light" href="#">Kenwood</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light" href="#">Haier</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled text-light" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="max-smith-r_Laq32e3vg-unsplash.jpg" height="600px" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="t-penguin-YV-E4JC4ek4-unsplash.jpg" height="600px" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="dewi-karuniasih-Rr4rmrcqRYE-unsplash.jpg" height="600px" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br><br><br>
+    <!--carouel end -->
+    <!-- cards -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card card-animation">
+                <img src="t-penguin-YV-E4JC4ek4-unsplash.jpg" height="300px" alt="Air Conditioner" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Cool Breeze AC</h5>
+                    <p class="card-text">Efficient and Reliable Air Conditioning Solutions</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">24/7 Emergency Service</li>
+                        <li class="list-group-item">Energy-saving Technology</li>
+                        <li class="list-group-item">Professional Installation</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-animation">
+                <img src="max-smith-r_Laq32e3vg-unsplash.jpg" height="300px" alt=" Air Conditioner " class="card-img-top ">
+                <div class="card-body ">
+                    <h5 class="card-title ">lil spy AC</h5>
+                    <p class="card-text ">Efficient and Reliable Air Conditioning Solutions</p>
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item ">24/7 Emergency Service</li>
+                        <li class="list-group-item ">best cooling Technology</li>
+                        <li class="list-group-item ">expensive but Reliable</li>
+                    </ul>
+                    <a href="# " class="btn btn-primary ">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 ">
+            <div class="card card-animation ">
+                <img src="dewi-karuniasih-Rr4rmrcqRYE-unsplash.jpg " height="300px" alt="Air Conditioner " class="card-img-top ">
+                <div class="card-body ">
+                    <h5 class="card-title ">HD Inverter AC</h5>
+                    <p class="card-text ">Efficient and Reliable Air Conditioning Solutions</p>
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item ">turbo fan temperature</li>
+                        <li class="list-group-item ">less electricity</li>
+                        <li class="list-group-item ">easy to install</li>
+                    </ul>
+                    <a href="# " class="btn btn-primary ">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <br><br>
+    <footer class="footer footer-animation">
+        <div class="container">
+            <p>&copy; 2023 AC Solutions. All rights reserved.</p>
+            <div class="footer-contact">
+                <span class="icon">
+              <i class="fas fa-phone"></i>
+            </span>
+                <a href="tel:03332427539">03332427539</a>
+            </div>
+            <div class="footer-contact">
+                <span class="icon">
+              <i class="fas fa-envelope"></i>
+            </span>
+                <a href="mailto:aburafayyy@gmail.com">aburafayyy@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+</body>
+
+</html>
